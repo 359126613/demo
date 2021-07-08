@@ -946,7 +946,7 @@ var newArr=dizhiArr.slice(index).concat(dizhiArr.slice(0,index));var shiertaisui
 	@param shiGanZhi:时干支
 	**/},{key:'getGuiShen',value:function getGuiShen(riGanZhi,shiGanZhi){var riGan=riGanZhi.split("")[0];var shiZhi=shiGanZhi.split("")[1];/**
 		1、甲戊庚牛羊,乙己鼠猴乡; 丙丁猪鸡位,壬癸蛇兔藏; 六辛逢马虎,天乙贵人方
-		**/var guirenObj={"甲":"丑未","戊":"丑未","庚":"丑未","乙":"子申","己":"子申","丙":"亥酉","丁":"丑未","壬":"卯巳","癸":"卯巳","辛":"午寅"};var guiRenZhi=guirenObj[riGan];//2、判断是白天还是黑夜
+		**/var guirenObj={"甲":"丑未","戊":"丑未","庚":"丑未","乙":"子申","己":"子申","丙":"亥酉","丁":"亥酉","壬":"卯巳","癸":"卯巳","辛":"午寅"};var guiRenZhi=guirenObj[riGan];//2、判断是白天还是黑夜
 var dayFlag=true;//var dayArr=["卯","辰","巳","午","未","申"];
 var nightArr=["酉","戌","亥","子","丑","寅"];if(nightArr.indexOf(shiZhi)!=-1)dayFlag=false;if(dayFlag)guiRenZhi=guiRenZhi.split("")[0];else guiRenZhi=guiRenZhi.split("")[1];//3、排序12贵神（12贵神：甲到庚，卯顺。酉逆。   辛壬癸，卯逆，酉顺。）
 var shunOrNiFlag=true;//true顺形
